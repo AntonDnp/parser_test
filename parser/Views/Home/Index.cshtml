@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Index</title>
+    <link type="text/css" rel="stylesheet" href="~/Content/Site.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <script src="~/Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    
+
+</head>
+<body>
+    <div> 
+        @*@{ 
+            int count = 0;
+        }*@
+
+        <table class="table-bordered">
+            @foreach (var item in ViewBag.list)
+            {
+
+                @*<p>@item</p>*@
+
+                @*<p>@item.Attributes["href"].Value</p>*@
+
+                @*<p>@count</p>*@
+                @*<p>@item</p>*@
+                @*//count++;*@
+
+                @*<p>@item</p>*@
+                @*<p><img src="@item.Attributes["src"].Value"></p>*@
+
+                @*<p>@item.name</p>*@
+
+                <tr><td>@item.name</td><td>@item.descr</td><td><img src="@item.image"></td></tr>
+
+
+            }
+        </table>
+
+        @*<p>@ViewBag.a.a</p>
+        <p>@ViewBag.a.b</p>
+        <p>@ViewBag.a.c</p>*@
+      
+
+    </div>
+
+    <script src="~/Scripts//bootstrap.min.js"></script>
+</body>
+</html>
